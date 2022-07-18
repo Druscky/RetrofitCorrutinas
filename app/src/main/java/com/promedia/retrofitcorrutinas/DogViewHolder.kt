@@ -8,6 +8,7 @@ import com.squareup.picasso.Picasso
 class DogViewHolder(view:View):RecyclerView.ViewHolder(view) {
     private val b = ItemDogBinding.bind(view)
     fun bind(image:String){
+        // Cargo la imagen de internet del parámetro en el ImageView
         Picasso.get()
             .load(image)
             .into(b.ivDog)
